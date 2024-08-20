@@ -1,0 +1,8 @@
+import socketio
+
+def use_socket():
+    return socketio.Client()
+
+if __name__ == '__main__':
+    socket = use_socket()
+    print(socket)

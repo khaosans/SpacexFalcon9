@@ -1,0 +1,9 @@
+import requests
+
+def fetch_job_data():
+    response = requests.get('/api/jobs')
+    return response.json()
+
+if __name__ == '__main__':
+    data = fetch_job_data()
+    print(data)

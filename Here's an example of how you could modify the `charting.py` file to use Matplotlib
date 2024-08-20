@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+def job_metrics_chart():
+    labels = ['Jan', 'Feb', 'Mar']
+    data = [10, 20, 30]
+    colors = ['rgba(255, 99, 132, 0.2)', 'rgba(255, 99, 132, 1)']
+
+    plt.bar(labels, data, color=colors)
+    plt.xlabel('Month')
+    plt.ylabel('Value')
+    plt.title('Job Metrics Chart')
+
+    return plt
+
+if __name__ == '__main__':
+    chart = job_metrics_chart()
+    chart.show()
